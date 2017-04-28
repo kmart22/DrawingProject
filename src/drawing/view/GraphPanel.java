@@ -56,4 +56,16 @@ public class GraphPanel extends JPanel
 			drawing.fill(current);
 		}
 	}
+	
+	public void setData(int [] data)
+	{
+		this.data = data;
+		repaint();
+	}
+	
+	public void sortData()
+	{
+		Arrays.sort(data);
+		repaint();	
+	}
 }
